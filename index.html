@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- -------------------Sidebar Menu Section------------------------- -->
+    <!--  -->
+
+    <section class="menu">
+        <div class="userProfile">
+            <img id="logo" src="./logo.png" logo of user">
+            <div class="profileName">
+                <a class="shadowText" href="#">INC</a>
+                <a class="userName" href="#">InnovateHub</a>
+            </div>
+            <img id="profilePicture" src="./profilePic.png" alt="profile picture of user">
+        </div>
+        <div class="items">
+            <li><a href="#"><i class="fa-solid fa-pen-nib"></i>Design Team</a><span>X+2</span></li>
+            <li><a href="#"><i class="fa-solid fa-bullhorn"></i>Marketing Team</a><span>X+2</span></li>
+            <li><a href="#"><i class="fa-solid fa-code"></i>Development Team</a><span>X+3</span></li>
+            <hr>
+            <li>
+                <h4><i class="fa-regular fa-square-plus greyText"></i>Create a team</h4>
+            </li>
+        </div>
+
+        <!-- ------------------------Folders Div Structure start------------------------------------------ -->
+
+        <div class="folders">
+            <h4 class="greyText">Folders <i class="fa-solid fa-plus greyText"></i></h4>
+            <div class="link"><a href="#"><i class="fa-regular fa-folder"></i>Products
+                </a>
+                <i class="fa-solid fa-caret-down"></i>
+
+                <!------------------ Dropdown Menu Structure---------------- -->
+                <!------------------ SubMenu div ------------------------->
+
+                <div class="subMenu">
+                    <a href="#">Roadmap</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Performance</a>
+                    <a href="#">Team</a>
+                    <a href="#">Analytics</a>
+                    <a id="greyText"><i class="fa-regular fa-square-plus greyText"></i> Add new sub</a>
+                </div>
+            </div>
+            <div class="link"><a href="#"><i class="fa-regular fa-folder"></i>Sales <i
+                        class="fa-solid fa-caret-down"></i></a>
+                <div class="subMenu">
+                    <a href="#">subItem</a>
+                    <a href="#">subItem</a>
+                    <a href="#">subItem</a>
+                    <a id="greyText"><i class="fa-regular fa-square-plus greyText"></i> Add new sub</a>
+                </div>
+            </div>
+            <div class="link"><a href="#"><i class="fa-regular fa-folder"></i>Design <i
+                        class="fa-solid fa-caret-down"></i></a>
+
+                <div class="subMenu">
+                    <a href="#">subItem</a>
+                    <a href="#">subItem</a>
+                    <a href="#">subItem</a>
+                    <a id="greyText"><i class="fa-regular fa-square-plus greyText"></i> Add new sub</a>
+                </div>
+            </div>
+            <div class="link"><a href="#"><i class="fa-regular fa-folder"></i>Office</a></div>
+            <div class="link"><a href="#"><i class="fa-regular fa-folder"></i>Legal</a></div>
+        </div>
+        <div class="otherOptions">
+            <li><i class="fa-solid fa-user-plus"></i><a href="#">Invite teammates</a></li>
+            <li><i class="fa-regular fa-circle-question"></i><a href="#">Help and first steps</a></li>
+            <li id="greyBg"><i class="fa-solid fa-4"></i><a href="#">days left on trial</a><button id="btnBling">Add
+                    bling</button></li>
+        </div>
+    </section>
+
+    <!-- -------------Interface Structure of Dashboard----------------------- -->
+
+    <section class="interface">
+        <nav class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fa-solid fa-bars"></i>
+                </div>
+                <div class="heading">
+                    <h2>Products</h2>
+                </div>
+            </div>
+            <div class="n2">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="myInput" type="text" placeholder="Search for..." onkeyup="searchFun()">
+                </div>
+                <i class="fa-regular fa-comments"></i>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+        </nav>
+        <hr>
+
+        <div class="links">
+            <div class="links1">
+                <div class="link"><i class="fa-solid fa-globe"></i><a href="#">All Brands <i
+                            class="fa-solid fa-caret-down"></i></a>
+
+                    <div class="subMenu">
+                        <a href="#">subItem</a>
+                        <a href="#">subItem</a>
+                        <a href="#">subItem</a>
+                        <a id="greyText"><i class="fa-regular fa-square-plus greyText"></i> Add new sub</a>
+                    </div>
+                </div>
+                <div class="link"><a href="#">Desk <i class="fa-solid fa-caret-down"></i></a>
+
+                    <div class="subMenu">
+                        <a href="#">subItem</a>
+                        <a href="#">subItem</a>
+                        <a href="#">subItem</a>
+                        <a id="greyText"><i class="fa-regular fa-square-plus greyText"></i> Add new sub</a>
+                    </div>
+                </div>
+                <div class="link"><a href="#">Tags <i class="fa-solid fa-caret-down"></i></a>
+
+                    <div class="subMenu">
+                        <a href="#">subItem</a>
+                        <a href="#">subItem</a>
+                        <a href="#">subItem</a>
+                        <a id="greyText"><i class="fa-regular fa-square-plus greyText"></i> Add new sub</a>
+                    </div>
+                </div>
+                <div class="sort"><i class="fa-solid fa-sort"></i>
+                    <p>Sort</p>
+                </div>
+                <div class="sort"><i class="fa-solid fa-filter"></i>
+                    <p>Filter</p>
+                </div>
+            </div>
+            <div class="links2">
+                <div class="meeting iE">
+                    <i class="fa-regular fa-square-plus"></i>
+                    <p>Meeting</p>
+                </div>
+                <div class="importExport iE">
+                    <i class="fa-solid fa-upload"></i>
+                    <p>Import/Export</p>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------Dashboard Table Start ------------------------>
+
+        <div class="board">
+            <table id="myTable" width="100%">
+                <thead>
+                    <tr>
+                        <td class="first"><input type="checkbox">Brand</td>
+                        <td>Description</td>
+                        <td>Members</td>
+                        <td>Categories</td>
+                        <td>Tags</td>
+                        <td>Next Meeting</td>
+                        <td>+</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- -------------First Row OF the Table----------------------------- -->
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./shopify.png" alt="shopify logo">
+                                <p>Shopify</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>2</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="users">
+                        </td>
+
+                        <td class="categories">
+                            <p>E-commerce</p>
+                            <p>B2B</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#OnlineShopping</p>
+                            <p>#DigitalMarketing</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>Tomorrow</p>
+                        </td>
+                    </tr>
+
+                    <!-- ------------Second Row Of Table------------ -->
+
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./paypal.png" alt="paypal logo">
+                                <p>Paypal</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>7</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="">
+                        </td>
+
+                        <td class="categories">
+                            <p>MarketPlace</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#OnlineTransaction</p>
+                            <p>#BuySellOnline</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>in 30 minutes</p>
+                        </td>
+                    </tr>
+                    <!-- --------------------Third Row Of Table------------------------- -->
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./mailchimp.png" alt="mailchimp logo">
+                                <p>MailChimp</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>5</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="">
+                        </td>
+
+                        <td class="categories">
+                            <p>SAAS</p>
+                            <p>Mobile</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#TechInnovation</p>
+                            <p>#CloudService</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>in 6 hours</p>
+                        </td>
+                    </tr>
+                    <!-- ----------------------------------------Fourth Row Of the Table--------------------------------------------------------- -->
+
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./mailchimp.png" alt="mailchimp logo">
+                                <p>Spotify</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>5</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="">
+                        </td>
+
+                        <td class="categories">
+                            <p>SAAS</p>
+                            <p>Mobile</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#TechInnovation</p>
+                            <p>#CloudService</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>in 6 hours</p>
+                        </td>
+                    </tr>
+
+                    <!-- -------------------------------Fifth Row Of the Table------------------------------------------------ -->
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./mailchimp.png" alt="mailchimp logo">
+                                <p>Wipro</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>5</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="">
+                        </td>
+
+                        <td class="categories">
+                            <p>SAAS</p>
+                            <p>Mobile</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#TechInnovation</p>
+                            <p>#CloudService</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>in 6 hours</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./mailchimp.png" alt="mailchimp logo">
+                                <p>Microsoft</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>5</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="">
+                        </td>
+
+                        <td class="categories">
+                            <p>SAAS</p>
+                            <p>Mobile</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#TechInnovation</p>
+                            <p>#CloudService</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>in 6 hours</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./mailchimp.png" alt="mailchimp logo">
+                                <p>Meta</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>5</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="">
+                        </td>
+
+                        <td class="categories">
+                            <p>SAAS</p>
+                            <p>Mobile</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#TechInnovation</p>
+                            <p>#CloudService</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>in 6 hours</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./mailchimp.png" alt="mailchimp logo">
+                                <p>Google</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>5</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="">
+                        </td>
+
+                        <td class="categories">
+                            <p>SAAS</p>
+                            <p>Mobile</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#TechInnovation</p>
+                            <p>#CloudService</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>in 6 hours</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./mailchimp.png" alt="mailchimp logo">
+                                <p>Amazon</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>5</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="">
+                        </td>
+
+                        <td class="categories">
+                            <p>SAAS</p>
+                            <p>Mobile</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#TechInnovation</p>
+                            <p>#CloudService</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>in 6 hours</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="brands">
+                            <div class="bind">
+                                <input type="checkbox">
+                                <img id="brandLogo" src="./mailchimp.png" alt="mailchimp logo">
+                                <p>Flipkart</p>
+                            </div>
+                            <div class="messages">
+                                <i class="fa-regular fa-comments"></i>
+                                <p>5</p>
+                            </div>
+                        </td>
+
+                        <td class="description">
+                            <p>Lorem ipsum dolor sit..</p>
+                        </td>
+
+                        <td class="members">
+                            <img id="usersStacked" src="./usersStacked.png" alt="">
+                        </td>
+
+                        <td class="categories">
+                            <p>SAAS</p>
+                            <p>Mobile</p>
+                        </td>
+
+                        <td class="tags">
+                            <p>#TechInnovation</p>
+                            <p>#CloudService</p>
+                        </td>
+
+                        <td class="nextMeeting">
+                            <p>in 6 hours</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
